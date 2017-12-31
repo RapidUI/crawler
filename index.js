@@ -36,7 +36,7 @@ app.get("/crawlAll", (req, res) => {
     })
 });
 
-app.get("/test", (res, req) => {
+app.get("/test", (req, res) => {
     res.send("test");
     res.end(200);
 })
