@@ -1,0 +1,10 @@
+{
+    "dev":  {
+        "apiKey": "AIzaSyBHtKlZ3NdMEHxXpv_JtRgS6LR8g_JUguQ",
+        "authDomain": "rapidai-97352.firebaseapp.com",
+        "databaseURL": "https://rapidai-97352.firebaseio.com",
+        "projectId": "rapidai-97352",
+        "storageBucket": "rapidai-97352.appspot.com",
+        "messagingSenderId": "172111519769"
+    }
+}

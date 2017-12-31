@@ -1,0 +1,26 @@
+{
+    "dev": {
+        "main_url": "http://174.138.109.83:8080",
+        "functions": {
+            "crawl" : {
+                "path": "/crawl",
+                "method": "POST",
+                "params": {
+                    "url": "string"
+                }
+            }
+        }
+    },
+    "local": {
+        "main_url": "http://localhost:8080",
+        "functions": {
+            "crawl" : {
+                "path": "/crawl",
+                "method": "POST",
+                "params": {
+                    "url": "string"
+                }
+            }
+        }
+    }
+}
