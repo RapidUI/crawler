@@ -1,6 +1,6 @@
 const app = require("express")();
 const bodyParser = require("body-parser");
-const { crawl, crawlAll, getWordsClassification } = require("./lib/functions/allFunctions");
+const { crawl, crawlAll, getWordsClassification, getAllWords } = require("./lib/functions/allFunctions");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -50,7 +50,16 @@ app.post("/ai/words", (req, res) => {
 });
 
 app.get("/ai/words", (req, res) => {
-    
+    const allWords = new getAllWords();
+    allWords.getAllWords()
+    .then(() => {
+        res.send("began processing");
+        res.end();
+    })
+    .catch((e) => {
+        res.send(e);
+        res.end();        
+    })
 })
 
 app.get("/test", (req, res) => {
