@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "body-parser": "^1.18.2",
+    "co": "^4.6.0",
     "express": "^4.16.2",
     "firebase": "^4.8.1",
+    "html-to-json": "^0.6.0",
+    "html2json": "^1.0.2",
     "request": "^2.83.0",
     "simplecrawler": "^1.1.6"
   },
